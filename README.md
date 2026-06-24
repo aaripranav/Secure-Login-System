@@ -239,3 +239,52 @@ README.md
 Educational project --- free to use and modify.
 
 [^1]: A-Za-z0-9\_.-
+
+------------------------------------------------------------------------
+
+Quick impelamtion 
+
+What I Built
+
+A secure login website where users can:
+- Register.
+- Log in.
+- View a private dashboard.
+- Log out.
+- Optionally enable 2FA.
+
+How To Run It
+
+Open PowerShell in the project folder and run:
+------------------------------------------------------------------------
+
+& 'C:\Users\ASUS\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' app.py
+------------------------------------------------------------------------
+
+Then open this in your browser:
+http://127.0.0.1:8000
+
+Keep PowerShell open while using the app.
+
+
+How To Test It
+
+- Click : Create account.
+- Use :
+Username: student1
+Email: student1@example.com
+Password: StrongPass123
+
+- Click : Register
+- Log in with the same username and password.
+- You should see the dashboard.
+- Click Log out.
+
+Simple Explanation
+
+- app.py is the main website code.
+- static/styles.css controls the design.
+- Passwords are protected using hashing.
+- SQLite stores users safely.
+- Sessions keep users logged in.
+- Logout removes the session.
